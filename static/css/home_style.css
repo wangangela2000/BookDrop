@@ -5,55 +5,7 @@ body {
 }
 
 
-/* nav start*/
 
-.nav{
-     display: flex;
-     padding: 0.9em;
-     background-color: #f4e7fa
-
-
-}
-
-.nav img{
-    object-fit: scale-down;
-    margin: auto;
-}
-
-.signin-btn button{
-    font-size:14px;
-    background-color:#ffffff;
-    padding: 0.2em 1em;
-    border-radius: 5px;
-    font-family: 'Source Sans Pro', sans-serif;
-    border-color: transparent;
-    color: #000000
-
-
-}
-
-
-.right-align{
-     margin-left: auto;
-
-}
-
-.menu-btn button{
-    border-color: transparent ; 
-    background-color: transparent ;
-    padding: 0px;
-}
-
-.logo-btn button{
-    border-color: transparent ; 
-    background-color: transparent ;
-    padding: 0px;
-    display: grid;
-    margin: auto;
-}
-
-
-/* nav end*/
 
 .section1{
      background-color: #f4e7fa;
@@ -68,6 +20,7 @@ h1 {
      position: relative;
      text-align: center;
      padding-bottom: 2em;
+     color: #212121;
 
 
      font-family: Source Sans Pro;
@@ -79,58 +32,7 @@ h1 {
 }
 
 
-/* search bar start*/
 
-.searchbar{
-    display: flex;
-    background-color: #ffffff;
-    border-radius: 5px;
-    padding: 0.5em;
-}
-
-.filter {
-    display: grid;
-    width: 10%
-}
-.form{
-    width: 90%;
-    display: grid;
-}
-.filter button {
-    border-color: transparent !important; 
-    background-color: transparent !important;
-    margin: auto !important;
-
-}
-
-
-.search-input input{
-    float: left;
-    width: 84%;
-    margin: auto;
-    padding: 0.2em 0em;
-    border-color: transparent;
-    font-family: Source Sans Pro;
-    font-size: 14px;
-}
-
-.search{
-    margin-left: auto;
-    display: grid;
-    float: left;
-    width: 10%;
-
-}
-
-.search button{
-    border-color: transparent ; 
-    background-color: transparent ;
-    margin: auto;
-
-}
-
-
-/* search bar end*/
 
 .register-btn{
      display: grid;
@@ -173,6 +75,7 @@ p{
     font-style: normal;
     font-weight: normal;
     margin: 0px;
+    color: #212121;
 
 }
 
