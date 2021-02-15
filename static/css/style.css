@@ -1,6 +1,13 @@
 /* applies to anything of class "example-class-selector" */
+body {
+     font-family: 'Source Sans Pro', sans-serif;
+     margin: 0px;
+}
 
-.landing-nav{
+
+/* nav start*/
+
+.nav{
      display: flex;
      padding: 0.9em;
      background-color: #f4e7fa
@@ -8,13 +15,58 @@
 
 }
 
+.nav img{
+    object-fit: scale-down;
+    margin: auto;
+}
+
+.signin-btn button{
+    font-size:14px;
+    background-color:#ffffff;
+    padding: 0.2em 1em;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-color: transparent;
+    color: #000000
+
+
+}
+
+
+.right-align{
+     margin-left: auto;
+
+}
+
+.menu-btn button{
+    border-color: transparent ; 
+    background-color: transparent ;
+    padding: 0px;
+}
+
+.logo-btn button{
+    border-color: transparent ; 
+    background-color: transparent ;
+    padding: 0px;
+    display: grid;
+    margin: auto;
+}
+
+
+/* nav end*/
+
+.section1{
+     background-color: #f4e7fa;
+     padding: 4em 2em;
+}
+
+
 h1 {
      font-family: 'Source Sans Pro', sans-serif;
      font-size: 20px;
      margin: 0px;
      position: relative;
      text-align: center;
-     padding-top: 3em;
      padding-bottom: 2em;
 
 
@@ -27,40 +79,63 @@ h1 {
 }
 
 
+/* search bar start*/
 
-
-.landing-nav img{
-    object-fit: contain;
-}
-
-.landing-nav button{
-    font-size:14px;
-    background-color:#ffffff;
-    padding: 0.2em 1em;
+.searchbar{
+    display: flex;
+    background-color: #ffffff;
     border-radius: 5px;
-    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0.5em;
+}
+
+.filter {
+    display: grid;
+    width: 10%
+}
+.form{
+    width: 90%;
+    display: grid;
+}
+.filter button {
+    border-color: transparent !important; 
+    background-color: transparent !important;
+    margin: auto !important;
+
+}
+
+
+.search-input input{
+    float: left;
+    width: 84%;
+    margin: auto;
+    padding: 0.2em 0em;
     border-color: transparent;
-    color: #000000
-
-
-    /*padding:0.3rem 0.4rem;*/
-}
-.right-align{
-     margin-left: auto;
-
+    font-family: Source Sans Pro;
+    font-size: 14px;
 }
 
+.search{
+    margin-left: auto;
+    display: grid;
+    float: left;
+    width: 10%;
 
-
-.section1{
-     background-color: #f4e7fa;
 }
 
-.button{
+.search button{
+    border-color: transparent ; 
+    background-color: transparent ;
+    margin: auto;
+
+}
+
+
+/* search bar end*/
+
+.register-btn{
      display: grid;
-     padding-bottom: 3em;
 }
-button {
+.register-btn button {
      font-size:17px;
      background-color:#67108F;
      padding: 0.58em 1.38em;
@@ -80,10 +155,8 @@ button {
 
 }
 
-body {
-     font-family: 'Source Sans Pro', sans-serif;
-     margin: 0px;
-}
+
+
 
 .section2{
     padding: 2em;
@@ -102,6 +175,9 @@ p{
     margin: 0px;
 
 }
+
+/* feature column start*/
+
 
 .feature_name{
     padding-top: 1em;
@@ -131,3 +207,5 @@ p{
     padding: 1em 0em;
     margin: auto;
 }
+
+/* feature column end*/
