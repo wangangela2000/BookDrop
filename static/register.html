@@ -27,18 +27,35 @@
 				<img src="images/user.png" id="user">
 			</div>
 			<div class="title2">
-				<h1>Sign In</h1>
+				<h1>Register</h1>
 			</div>
 
 			<div class="filters-form">
 				<form action="/action_page.php">
+					<div class="form-component">
+						<div class="form-label fname">
+							<label for="fname"><p>NAME</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="fname" name="fname" placeholder="Harry Potter">
+						</div>
+					</div>
 
 					<div class="form-component">
 						<div class="form-label femail">
-							<label for="femail"><p>EMAIL</p></label>
+							<label for="femail"><p>UNIVERSITY EMAIL</p></label>
 						</div>
 						<div class="form-input">
 							<input type="text" id="femail" name="femail" placeholder="hpotter@ucsd.edu">
+						</div>
+					</div>
+
+					<div class="form-component">
+						<div class="form-label funi">
+							<label for="funi"><p>UNIVERSITY NAME</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="funi" name="funi" placeholder="University of California, San Diego">
 						</div>
 					</div>
 
@@ -55,12 +72,12 @@
 
 
 					<div class="submit-btn">
-						<input type="submit" value="SIGN IN">
+						<input type="submit" value="REGISTER">
 					</div>
 
 				</form>
 				<div class="other-btn">
-					<button type="button">REGISTER></button>
+					<button type="button">SIGN IN></button>
 				</div>
 
 
