@@ -39,9 +39,7 @@ body {
     display: grid;
     margin: auto;
 }
-.refine-btn inner{
-  display: flex;
-}
+
 
 .refine-btn button{
     background-color: #ffffff;
