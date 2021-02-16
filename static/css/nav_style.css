@@ -9,7 +9,7 @@
 }
 
 .nav img{
-    object-fit: scale-down;
+    object-fit: cover;
     margin: auto;
 }
 
@@ -32,18 +32,25 @@
 }
 
 .menu-btn button{
-    border-color: transparent ; 
+    border-color: transparent ;
     background-color: transparent ;
     padding: 0px;
 }
 
+.menu-btn img{
+    height: 25px;
+}
+
 .logo-btn button{
-    border-color: transparent ; 
+    border-color: transparent ;
     background-color: transparent ;
     padding: 0px;
     display: grid;
     margin: auto;
 }
 
+.logo-btn img{
+    height: 25px;
+}
 
 /* nav end*/

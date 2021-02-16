@@ -109,6 +109,9 @@ p{
 .feature_img img{
     padding: 1em 0em;
     margin: auto;
+
+    object-fit: contain;
+    height: 51px;
 }
 
 /* feature column end*/

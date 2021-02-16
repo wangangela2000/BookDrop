@@ -29,6 +29,8 @@
 
 .listing-img img{
     margin: auto;
+    object-fit: contain;
+    height: 14px;
 }
 
 

@@ -39,26 +39,48 @@ body {
     display: grid;
     margin: auto;
 }
+.refine-btn inner{
+  display: flex;
+}
 
 .refine-btn button{
     background-color: #ffffff;
-    font-family: 'Source Sans Pro';
-    font-size: 14px;
+
     padding: 0.2em;
     border-color: #67108f;
     border-radius: 5px;
     border-width: 1px;
     padding: 0.3em;
     display: flex;
-    margin-bottom: auto;
     color: #67108f;
+    border-style: solid;
 
 }
 
+.refine-btn-img{
+  display: grid;
+}
 .refine-btn img{
-    padding: 0em 0.2em;
+    padding-right: 0.2em;
+    object-fit: contain;
+    height: 13px;
+    margin: auto;
 }
 
+.refine-btn-text{
+    display: grid;
+    height: 100%;
+    margin-bottom: auto;
 
+}
 
+.refine-btn-text p{
+  margin: auto;
+  padding-left: 0em;
 
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+}

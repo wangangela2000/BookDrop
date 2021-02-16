@@ -18,7 +18,7 @@
     display: grid;
 }
 .filter button {
-    border-color: transparent; 
+    border-color: transparent;
     background-color: transparent;
     margin: auto;
 
@@ -44,10 +44,16 @@
 }
 
 .search button{
-    border-color: transparent ; 
+    border-color: transparent ;
     background-color: transparent ;
     margin: auto;
+    margin-left: ]auto;
 
+}
+
+.search img{
+    object-fit: contain;
+    height: 19px;
 }
 
 
