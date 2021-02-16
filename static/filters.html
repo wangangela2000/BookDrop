@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>BookDrop - Add Listing</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/filters_style.css" rel="stylesheet">
+	<link href="css/nav_style.css" rel="stylesheet">
+	<link href="css/form_style.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:ital,wght@0,100...900;1,100...900">
+
+	<!-- this is a comment in HTML -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<div>
+
+		<div class="nav">
+			<div class="logo-btn">
+				<button type="button"><img src="images/logo.png" id="logo"></button>
+			</div>
+			<div class="right-align">
+				<div class="menu-btn">
+					<button id="menu-button" type="button"><img src="images/menu.png"></button>
+				</div>
+			</div>
+		</div>
+		<div class="section1">
+			<div class="title">
+				<h1>Filters</h1>
+			</div>
+
+			<div class="filters-form">
+				<form action="/action_page.php">
+					<div class="sort">
+						<div class="section-title">
+							<p>
+								Sort By
+							</p>
+						</div>
+						<div class="sort-btn-group">
+							<div class="single-btn sort-btn">
+								<button type="button"><p>
+									Price (low to high)
+								</p></button>
+							</div>
+							<div class="single-btn sort-btn">
+								<button type="button"><p>
+									Price (high to low)
+								</p></button>
+							</div>
+							<div class="single-btn sort-btn">
+								<button type="button"><p>
+									Date Added (newest)
+								</p></button>
+							</div>
+							<div class="single-btn sort-btn">
+								<button type="button"><p>
+									Date Added (oldest)
+								</p></button>
+							</div>
+
+					</div>
+					<div class="section-title">
+						<p>
+							Price
+						</p>
+					</div>
+					<div class="form-component">
+						<div class="form-label fmin">
+							<label for="fmin"><p>Min Price ($)</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="fmin" name="fmin" placeholder="10.00">
+						</div>
+					</div>
+
+					<div class="form-component">
+						<div class="form-label fmax">
+							<label for="fmax"><p>Max Price ($)</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="fmax" name="fmax" placeholder="100.00">
+						</div>
+					</div>
+
+
+
+
+					<div class="submit-btn">
+						<input type="submit" value="SAVE">
+					</div>
+
+				</form>
+
+
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

@@ -149,3 +149,28 @@
   font-weight: normal;
   font-size: 12px;
 }
+
+.sort-btn{
+  display: grid;
+  margin-bottom: 0.7em;
+}
+
+.sort-btn button{
+  background-color: #ffffff;
+   border: 1px #67108F;
+   color: #67108F;
+   border-style: solid;
+   text-align: center;
+   text-decoration: none;
+   font-family: Source Sans Pro;
+   font-weight: 400px;
+   font-size: 12px;
+   margin: auto;
+   width: 100%;
+   height: 27px;
+   display: grid;
+}
+
+.sort-btn p{
+  margin: auto;
+}
