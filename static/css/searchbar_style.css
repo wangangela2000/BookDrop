@@ -55,6 +55,15 @@
     object-fit: contain;
     height: 19px;
 }
+::placeholder{
+  font-family: Source Sans Pro;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* light gray */
 
+  color: #989797;
+}
 
 /* search bar end*/

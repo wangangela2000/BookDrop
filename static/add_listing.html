@@ -5,10 +5,9 @@
 	<title>BookDrop - Add Listing</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/home_style.css" rel="stylesheet">
+	<link href="css/add-listing_style.css" rel="stylesheet">
 	<link href="css/nav_style.css" rel="stylesheet">
-	<link href="css/searchbar_style.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:ital,wght@0,100...900;1,100...900">
 
 	<!-- this is a comment in HTML -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -33,7 +32,116 @@
 			</div>
 		</div>
 		<div class="section1">
-			<h1> Search for Textbook Listings</h1>
+			<div class="title">
+				<h1>Add New Listing</h1>
+			</div>
+
+			<div class="add-form">
+				<form action="/action_page.php">
+
+					<div class="form-component">
+						<div class="form-label ftitle">
+							<label for="ftitle"><p>TITLE</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="ftitle" name="fname" placeholder="Linear Algebra 8th Edition">
+						</div>
+					</div>
+
+					<div class="form-component">
+						<div class="form-label fauthor">
+							<label for="fauthor"><p>AUTHOR</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="fauthor" name="fauthor" placeholder="Ron Larson">
+						</div>
+					</div>
+
+					<div class="form-component">
+						<div class="form-label fisbn">
+							<label for="fisbn"><p>ISBN</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="fisbn" name="fisbn" placeholder="978-1133110873">
+						</div>
+					</div>
+
+					<div class="form-component">
+						<div class="form-label fclass">
+							<label for="fclass"><p>CLASS</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="fclass" name="fclass" placeholder="Math 18">
+						</div>
+					</div>
+
+					<div class="form-component">
+						<div class="form-label fprice">
+							<label for="fprice"><p>PRICE ($)</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="fprice" name="fprice" placeholder="10.00">
+						</div>
+					</div>
+
+					<div class="form-btn-component">
+						<div class="form-label">
+							<p>
+								CONDITION
+							</p>
+						</div>
+						<div class="form-btn-group">
+							<div class="form-btn left-btn">
+								<button type="button">Excellent</button>
+							</div>
+							<div class="form-btn middle-btn">
+								<button type="button">Good</button>
+							</div>
+							<div class="form-btn right-btn">
+								<button type="button">Bad</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-btn-component">
+						<div class="form-label">
+							<p>
+								NEGOTIABLE
+							</p>
+						</div>
+						<div class="form-btn-group">
+							<div class="form-btn left-btn">
+								<button type="button">Yes</button>
+							</div>
+							<div class="form-btn right-btn">
+								<button type="button">No</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-textarea-component">
+						<div class="form-label">
+							<p>
+								NOTES
+							</p>
+						</div>
+						<div class="form-textarea">
+							<textarea name="message" rows="2"
+							style="width:100%;height:40px"
+							placeholder="There are some notes on the margins and highlights on the key words..."></textarea>
+						</div>
+					</div>
+
+
+					<div class="submit-btn">
+						<input type="submit" value="ADD">
+					</div>
+
+				</form>
+
+
+			</div>
+
 		</div>
 	</div>
 </body>
