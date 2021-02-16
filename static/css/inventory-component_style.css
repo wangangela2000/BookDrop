@@ -37,8 +37,9 @@
 
 
 .listing-info{
-    padding: 1em;
+    padding: 5%;
     text-align: left;
+    width: 47%;
 }
 
 .info-title{
@@ -90,6 +91,23 @@
     color: #5F5F5F;
     margin-top: 0.3em;
 
+}
+
+.remove-listing{
+  display: grid;
+  width: 13%;
+
+  background-color: #f4e7fa;
+  border-radius: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
+
+.remove-listing img{
+  object-fit: contain;
+  height: 24px;
+  margin: auto;
 }
 
 /*listing component end*/

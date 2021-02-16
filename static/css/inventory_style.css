@@ -1,0 +1,108 @@
+/* applies to anything of class "example-class-selector" */
+body {
+     font-family: 'Source Sans Pro', sans-serif;
+     margin: 0px;
+}
+
+
+
+
+.section1{
+     background-color: #f4e7fa;
+     padding: 2em 2em;
+}
+
+
+
+
+
+
+.section2{
+    padding: 2em;
+}
+
+.result-heading{
+    display: flex;
+    padding-bottom: 1em;
+}
+
+.result-title{
+    font-family: 'Source Sans Pro'
+    font-style: normal;
+    font-weight: normal;
+    color: #212121;
+    font-size: 20px;
+
+
+}
+
+
+
+
+.add-btn-group{
+  width: 100%;
+  display: flex;
+}
+
+.add-btn-group button{
+  background-color: #f4e7fa;
+   border: 1px #ffffff;
+   color: #67108F;
+   border-style: solid;
+   text-align: center;
+   text-decoration: none;
+   font-family: Source Sans Pro;
+   font-weight: 400px;
+   font-size: 12px;
+   margin-left: auto;
+   width: 100%;
+   height: 27px;
+
+   height: 40px;
+
+}
+
+.add-btn{
+  width: 100%;
+}
+
+.single-btn button{
+  border-radius: 5px;
+  display: flex;
+}
+
+.single-btn{
+  display: grid;
+}
+
+.add-btn-img{
+  display: grid;
+  height: 100%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 0.5em;
+}
+
+.single-btn img{
+  object-fit: contain;
+  height: 12px;
+  margin: auto;
+
+}
+
+.add-btn-text{
+    display: grid;
+    height: 100%;
+    margin-bottom: auto;
+    margin-right: auto;
+
+}
+
+.add-btn-text p{
+  margin: auto;
+
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
