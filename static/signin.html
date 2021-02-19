@@ -32,7 +32,8 @@
 			</div>
 
 			<div class="filters-form">
-				<form action="/action_page.php">
+				<!-- need to write /action_page.php or something else to handle login/register later-->
+				<!-- <form action="/action_page.php"> -->
 
 					<div class="form-component">
 						<div class="form-label femail">
@@ -55,13 +56,13 @@
 
 
 
+					<!-- convert back to form submission later -->
 					<div class="submit-btn">
-						<input type="submit" value="SIGN IN">
+						<button type="button" value="SIGN IN" onClick="parent.location='inventory.html'">SIGN IN</button>
 					</div>
 
-				</form>
 				<div class="other-btn">
-					<button type="button">REGISTER></button>
+					<button type="button" onClick="parent.location='register.html'">REGISTER></button>
 				</div>
 
 
