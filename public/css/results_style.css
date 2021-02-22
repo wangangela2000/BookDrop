@@ -1,0 +1,87 @@
+/* applies to anything of class "example-class-selector" */
+body {
+     font-family: 'Source Sans Pro', sans-serif;
+     margin: 0px;
+}
+
+
+
+
+.section1{
+     background-color: #f4e7fa;
+     padding: 2em 2em;
+}
+
+
+
+
+
+
+.section2{
+    padding: 2em;
+}
+
+.result-heading{
+    display: flex;
+    padding-bottom: 1em;
+}
+
+.result-title{
+    font-family: 'Source Sans Pro'
+    font-style: normal;
+    font-weight: normal;
+    color: #212121;
+    font-size: 20px;
+
+
+}
+.refine-btn{
+    display: grid;
+    margin: auto;
+}
+
+
+.refine-btn button{
+    background-color: #f4e7fa;
+
+    padding: 0.4em;
+    border-color: #ffffff;
+    border-radius: 5px;
+    border-width: 1px;
+    display: flex;
+    color: #67108f;
+    border-style: solid;
+    height:26px;
+
+}
+
+.refine-btn-img{
+  display: grid;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.refine-btn img{
+    padding-right: 0.3em;
+    object-fit: contain;
+    height: 13px;
+    margin: auto;
+}
+
+.refine-btn-text{
+    display: grid;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.refine-btn-text p{
+  margin: auto;
+  padding-left: 0em;
+
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+}

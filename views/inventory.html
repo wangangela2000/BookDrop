@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>BookDrop</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/inventory_style.css" rel="stylesheet">
+	<link href="css/nav_style.css" rel="stylesheet">
+	<!--link href="css/form_style.css" rel="stylesheet"-->
+	<link href="css/inventory-component_style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:ital,wght@0,400;1,400">
+
+	<!-- this is a comment in HTML -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<div>
+
+		<div class="nav">
+			<div class="logo-btn">
+				<button type="button" onClick="parent.location='search_listing.html'"><img src="images/logo.png" id="logo"></button>
+			</div>
+			<div class="right-align">
+				<div class="menu-btn">
+					<button id="menu-button" type="button" onClick="parent.location='menu.html'"><img src="images/menu.png"></button>
+				</div>
+			</div>
+		</div>
+
+		<div class="section2">
+			<div class ="result-heading">
+				<div class="result-title">
+					My Inventory
+				</div>
+
+				</div>
+			<div class="result-list">
+				<div class="listing-component">
+					<button type="button" onClick="parent.location='listing.html'">
+						<div class="listing">
+							<div class="listing-img">
+								<img src="images/listing-img.png">
+							</div>
+							<div class="listing-info">
+								<div class="info-title">Textbook Title</div>
+								<div class="info-author">by Author Name</div>
+								<div class="info-price">$10.00</div>
+								<div class="info-class">for Class ID</div>
+							</div>
+							<div class="remove-listing">
+								<img src="images/x.png">
+							</div>
+						</div>
+					</button>
+				</div>
+
+
+				<div class="add-btn-group">
+					<div class="add-btn single-btn">
+						<button type="button" onClick="parent.location='add_listing.html'">
+							<div class="add-btn-img">
+								<img src="images/+.png">
+							</div>
+							<div class="add-btn-text">
+								<p> Add New Listing </p>
+							</div>
+						</button>
+					</div>
+				 </div>
+
+
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

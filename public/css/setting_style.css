@@ -1,0 +1,103 @@
+/* applies to anything of class "example-class-selector" */
+body {
+     font-family: 'Source Sans Pro', sans-serif;
+     margin: 0px;
+     background-color: #ffffff;
+
+}
+
+
+.section1{
+     padding: 2em 2.5em;
+     margin: 0px;
+}
+
+.title h1{
+    font-family: 'Source Sans Pro';
+    font-style:normal;
+    font-weight: 400;
+    color: #212121;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.profile-img{
+    background-color: #F4E7FA;
+    height: 231px;
+    width: 100%;
+    display: grid;
+
+    margin: 2em 0em;
+}
+
+.profile-img img{
+    object-fit: contain;
+    height: 170px;
+    margin: auto;
+}
+
+.section-title p{
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #212121;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  margin: 0px;
+}
+.submit-btn{
+     margin-top: 3em;
+     display: grid;
+}
+.submit-btn input {
+     font-size:17px;
+     background-color:#67108F;
+     padding: 0.58em 1.38em;
+     width: 50%;
+     max-width: 200px;
+     border-radius: 5px;
+     font-family: 'Source Sans Pro', sans-serif;
+     border-color: transparent;
+     margin: auto;
+     text-align: center;
+
+     font-style: normal;
+     font-weight: normal;
+     letter-spacing: 0.05em;
+
+    /* white */
+
+    color: #FFFFFF
+
+}
+
+.other-btn{
+  margin-top: 1em;
+  display: flex;
+}
+
+.other-btn button {
+     font-size:17px;
+     background-color:#FFFFFF;
+     padding: 0.58em 1.38em;
+     width: 50%;
+     max-width: 200px;
+     border-radius: 5px;
+     font-family: 'Source Sans Pro', sans-serif;
+     border-color: #67108F;
+     border-width: 1px;
+     margin: auto;
+     text-align: center;
+
+     font-style: normal;
+     font-weight: normal;
+     letter-spacing: 0.05em;
+     white-space: nowrap;
+
+    /* white */
+
+    color: #67108F
+
+}

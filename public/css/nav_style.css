@@ -1,0 +1,56 @@
+/* nav start*/
+
+.nav{
+     display: flex;
+     padding: 0.5em 0.7em;
+     background-color: #f4e7fa
+
+
+}
+
+.nav img{
+    object-fit: cover;
+    margin: auto;
+}
+
+.signin-btn button{
+    font-size:14px;
+    background-color:#ffffff;
+    padding: 0.2em 1em;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-color: transparent;
+    color: #67108F
+
+
+}
+
+
+.right-align{
+     margin-left: auto;
+
+}
+
+.menu-btn button{
+    border-color: transparent ;
+    background-color: transparent ;
+    padding: 0px;
+}
+
+.menu-btn img{
+    height: 25px;
+}
+
+.logo-btn button{
+    border-color: transparent ;
+    background-color: transparent ;
+    padding: 0px;
+    display: grid;
+    margin: auto;
+}
+
+.logo-btn img{
+    height: 25px;
+}
+
+/* nav end*/

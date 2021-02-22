@@ -1,0 +1,172 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>BookDrop</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/add-listing_style.css" rel="stylesheet">
+	<link href="css/nav_style.css" rel="stylesheet">
+	<link href="css/form_style.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:ital,wght@0,100...900;1,100...900">
+
+	<!-- this is a comment in HTML -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<div>
+
+		<div class="nav">
+			<div class="logo-btn">
+				<button type="button" onClick="parent.location='search_listing.html'"><img src="images/logo.png" id="logo"></button>
+			</div>
+			<div class="right-align">
+				<div class="menu-btn">
+					<button id="menu-button" type="button" onClick="parent.location='menu.html'"><img src="images/menu.png"></button>
+				</div>
+			</div>
+		</div>
+		<div class="section1">
+			<div class="title">
+				<h1>Add New Listing</h1>
+			</div>
+
+			<div class="add-form">
+				<form action="/action_page.php">
+
+					<div class="form-component">
+						<div class="form-label ftitle">
+							<label for="ftitle"><p>TITLE</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="ftitle" name="ftitle" placeholder="Linear Algebra 8th Edition">
+						</div>
+					</div>
+
+					<div class="form-component">
+						<div class="form-label fauthor">
+							<label for="fauthor"><p>AUTHOR</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="fauthor" name="fauthor" placeholder="Ron Larson">
+						</div>
+					</div>
+
+					<div class="form-component">
+						<div class="form-label fisbn">
+							<label for="fisbn"><p>ISBN</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="fisbn" name="fisbn" placeholder="978-1133110873">
+						</div>
+					</div>
+
+					<div class="form-component">
+						<div class="form-label fclass">
+							<label for="fclass"><p>CLASS</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="fclass" name="fclass" placeholder="Math 18">
+						</div>
+					</div>
+
+					<div class="form-component">
+						<div class="form-label fprice">
+							<label for="fprice"><p>PRICE ($)</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="fprice" name="fprice" placeholder="10.00">
+						</div>
+					</div>
+
+					<div class="form-btn-component">
+						<div class="form-label">
+							<p>
+								CONDITION
+							</p>
+						</div>
+						<div class="form-btn-group">
+							<div class="form-btn left-btn">
+								<button type="button">Excellent</button>
+							</div>
+							<div class="form-btn middle-btn">
+								<button type="button">Good</button>
+							</div>
+							<div class="form-btn right-btn">
+								<button type="button">Bad</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-btn-component">
+						<div class="form-label">
+							<p>
+								NEGOTIABLE
+							</p>
+						</div>
+						<div class="form-btn-group">
+							<div class="form-btn left-btn">
+								<button type="button">Yes</button>
+							</div>
+							<div class="form-btn right-btn">
+								<button type="button">No</button>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="form-btn-component">
+						<div class="form-label">
+							<p>
+								IMAGE
+							</p>
+						</div>
+						<div class="form-btn-group">
+							<div class="form-btn single-btn">
+								<button type="button">
+									<div class="upload-btn-img">
+										<img src="images/upload.png">
+									</div>
+									<div class="upload-btn-text">
+										<p> Choose Image </p>
+									</div>
+								</button>
+							</div>
+						 </div>
+					</div>
+
+					<div class="form-textarea-component">
+						<div class="form-label">
+							<p>
+								NOTES
+							</p>
+						</div>
+						<div class="form-textarea">
+							<textarea name="message" rows="2"
+							style="width:100%;height:40px"
+							placeholder="There are some notes on the margins and highlights on the key words..."></textarea>
+						</div>
+					</div>
+
+
+					<div class="submit-btn">
+						<input type="submit" value="ADD">
+					</div>
+
+				</form>
+
+
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

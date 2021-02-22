@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>BookDrop</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/results_style.css" rel="stylesheet">
+	<link href="css/nav_style.css" rel="stylesheet">
+	<link href="css/searchbar_style.css" rel="stylesheet">
+	<link href="css/listing-component_style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:ital,wght@0,400;1,400">
+
+	<!-- this is a comment in HTML -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<div>
+
+		<div class="nav">
+			<div class="logo-btn">
+				<button type="button" onClick="parent.location='search_listing.html'"><img src="images/logo.png" id="logo"></button>
+			</div>
+			<div class="right-align">
+				<div class="menu-btn">
+					<button id="menu-button" type="button" onClick="parent.location='menu.html'"><img src="images/menu.png"></button>
+				</div>
+			</div>
+		</div>
+		<div class="section1">
+			<div class="searchbar">
+				<!--div class="filter">
+					<button class="transparant-button" type="button"><img src="images/sliders.png"></button>
+				</div-->
+				<div class="form">
+					<form class="example" action="action_page.php">
+						<div class="search-input">
+							<input type="search" placeholder="Search textbook name, class, author, isbn..." name="search">
+						</div>
+						<div class="search">
+							<button class="transparant-button" type="submit"><img src="images/search.png"></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="section2">
+			<div class ="result-heading">
+				<div class="result-title">
+					Results
+				</div>
+				<div class="right-align">
+					<div class="refine-btn">
+						<button type="button">
+							<div class="refine-btn-img">
+								<img src="images/sliders.png">
+							</div>
+							<div class="refine-btn-text">
+								<p> Refine </p>
+							</div>
+							<!--div class ="refine-btn-inner">
+
+							</div-->
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="result-list">
+				<div class="listing-component">
+					<button type="button" onClick="parent.location='listing.html'">
+						<div class="listing">
+							<div class="listing-img">
+								<img src="images/listing-img.png">
+							</div>
+							<div class="listing-info">
+								<div class="info-title">Textbook Title</div>
+								<div class="info-author">by Author Name</div>
+								<div class="info-price">$10.00</div>
+								<div class="info-class">for Class ID</div>
+							</div>
+						</div>
+					</button>
+				</div>
+
+
+				<div class="listing-component">
+					<button type="button" onClick="parent.location='listing.html'">
+						<div class="listing">
+							<div class="listing-img">
+								<img src="images/listing-img.png">
+							</div>
+							<div class="listing-info">
+								<div class="info-title">Textbook Title</div>
+								<div class="info-author">by Author Name</div>
+								<div class="info-price">$10.00</div>
+								<div class="info-class">for Class ID</div>
+							</div>
+						</div>
+					</button>
+				</div>
+				<div class="listing-component">
+					<button type="button" onClick="parent.location='listing.html'">
+						<div class="listing">
+							<div class="listing-img">
+								<img src="images/listing-img.png">
+							</div>
+							<div class="listing-info">
+								<div class="info-title">Textbook Title</div>
+								<div class="info-author">by Author Name</div>
+								<div class="info-price">$10.00</div>
+								<div class="info-class">for Class ID</div>
+							</div>
+						</div>
+					</button>
+				</div>
+				<div class="listing-component">
+					<button type="button" onClick="parent.location='listing.html'">
+						<div class="listing">
+							<div class="listing-img">
+								<img src="images/listing-img.png">
+							</div>
+							<div class="listing-info">
+								<div class="info-title">Textbook Title</div>
+								<div class="info-author">by Author Name</div>
+								<div class="info-price">$10.00</div>
+								<div class="info-class">for Class ID</div>
+							</div>
+						</div>
+					</button>
+				</div>
+
+
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

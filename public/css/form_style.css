@@ -1,0 +1,183 @@
+/* applies to anything of class "example-class-selector" */
+.form-component{
+    margin-bottom: 1.6em;
+}
+
+.form-label p{
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+
+  /* dark purple 1 */
+
+  color: #67108F;
+  margin:0px;
+  padding-bottom: 0.6em;
+  cursor: none;
+}
+
+.form-input{
+
+}
+.form-input input[type=text]{
+  border: none;
+  width: 100%;
+  height: 2em;
+
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #212121;
+
+}
+
+.form-component{
+  box-sizing: border-box;
+  border-bottom: 1px #67108F;
+  border-bottom-style: solid;
+}
+
+
+::placeholder{
+  font-family: Source Sans Pro;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* light gray */
+
+  color: #989797;
+}
+
+
+
+/* start toggle btn*/
+.form-btn-component{
+
+  margin-bottom: 1.6em;
+}
+
+
+
+.form-btn-group{
+  width: 100%;
+  display: flex;
+}
+
+.form-btn-group button{
+  background-color: #ffffff;
+   border: 1px #67108F;
+   color: #67108F;
+   border-style: solid;
+   text-align: center;
+   text-decoration: none;
+   font-family: Source Sans Pro;
+   font-weight: 400px;
+   font-size: 12px;
+   margin-left: auto;
+   width: 100%;
+   height: 27px;
+}
+
+.form-btn{
+  width: 100%;
+}
+
+.left-btn button{
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-right: none;
+}
+
+.middle-btn button{
+  border-right: none;
+}
+
+.right-btn button{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+.form-textarea-component{
+  margin-bottom: 1.6em;
+}
+
+.form-textarea{
+  box-sizing: border-box;
+  border-bottom: 1px #67108F;
+  border-bottom-style: solid;
+}
+.form-textarea textarea{
+  border: none;
+}
+
+.single-btn button{
+  border-radius: 5px;
+  display: flex;
+}
+
+.single-btn{
+  display: grid;
+}
+
+.upload-btn-img{
+  display: grid;
+  height: 100%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 0.5em;
+}
+
+.single-btn img{
+  object-fit: contain;
+  height: 12px;
+  margin: auto;
+
+}
+
+.upload-btn-text{
+    display: grid;
+    height: 100%;
+    margin-bottom: auto;
+    margin-right: auto;
+
+}
+
+.upload-btn-text p{
+  margin: auto;
+
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.sort-btn{
+  display: grid;
+  margin-bottom: 0.7em;
+}
+
+.sort-btn button{
+  background-color: #ffffff;
+   border: 1px #67108F;
+   color: #67108F;
+   border-style: solid;
+   text-align: center;
+   text-decoration: none;
+   font-family: Source Sans Pro;
+   font-weight: 400px;
+   font-size: 12px;
+   margin: auto;
+   width: 100%;
+   height: 27px;
+   display: grid;
+}
+
+.sort-btn p{
+  margin: auto;
+}

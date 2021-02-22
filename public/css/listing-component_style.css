@@ -1,0 +1,95 @@
+/*listing component start*/
+
+.listing-component{
+    display: flex;
+    margin: 1em 0em;
+
+}
+
+.listing-component button{
+    background-color: #ffffff;
+    border-color: #f4e7fa;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+    padding: 0px;
+
+}
+
+.listing{
+    display: flex;
+}
+.listing-img{
+    width: 30%;
+    background-color: #f4e7fa;
+    border-radius: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: grid;
+}
+
+.listing-img img{
+    margin: auto;
+    object-fit: contain;
+    height: 14px;
+}
+
+
+.listing-info{
+    padding: 1em;
+    text-align: left;
+}
+
+.info-title{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* very dark gray */
+
+    color: #212121;
+}
+
+.info-price{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* very dark gray */
+
+    color: #212121;
+
+    margin-top: 0.7em;
+}
+
+.info-author{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    /* dark gray */
+
+    color: #5F5F5F;
+
+    margin-top: 0.3em;
+
+}
+
+.info-class{
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    /* dark gray */
+
+    color: #5F5F5F;
+    margin-top: 0.3em;
+
+}
+
+/*listing component end*/

@@ -1,0 +1,38 @@
+/* applies to anything of class "example-class-selector" */
+body {
+     font-family: 'Source Sans Pro', sans-serif;
+     margin: 0px;
+     background-color: #F4E7FA;
+
+}
+
+.section1{
+  padding: 2em 2.5em;
+}
+.menu-component{
+    box-sizing: border-box;
+    border-bottom: 1px #67108F;
+    border-bottom-style: solid;
+}
+
+.menu-item p{
+  font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+color: #67108F;
+
+}
+
+.menu-item button{
+  width: 100%;
+  height: 100%;
+
+  background-color: #F4E7FA;
+  border: none;
+  display: flex;
+
+  padding: 0.2em 0em;
+  margin: 0px;
+}

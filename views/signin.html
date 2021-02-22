@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>BookDrop</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/signin_style.css" rel="stylesheet">
+	<link href="css/nav_style.css" rel="stylesheet">
+	<link href="css/form_style.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:ital,wght@0,100...900;1,100...900">
+
+	<!-- this is a comment in HTML -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<div>
+		<div class="section1">
+			<div class="user-img">
+				<img src="images/user.png" id="user">
+			</div>
+			<div class="title2">
+				<h1>Sign In</h1>
+			</div>
+
+			<div class="filters-form">
+				<!-- need to write /action_page.php or something else to handle login/register later-->
+				<!-- <form action="/action_page.php"> -->
+
+					<div class="form-component">
+						<div class="form-label femail">
+							<label for="femail"><p>EMAIL</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="femail" name="femail" placeholder="hpotter@ucsd.edu">
+						</div>
+					</div>
+
+					<div class="form-component">
+						<div class="form-label fpassword">
+							<label for="fpassword"><p>PASSWORD</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="fpassword" name="fpassword" placeholder="*****">
+						</div>
+					</div>
+
+
+
+
+					<!-- convert back to form submission later -->
+					<div class="submit-btn">
+						<button type="button" value="SIGN IN" onClick="parent.location='inventory.html'">SIGN IN</button>
+					</div>
+
+				<div class="other-btn">
+					<button type="button" onClick="parent.location='register.html'">REGISTER></button>
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
