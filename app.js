@@ -8,11 +8,19 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
-var index = require('./routes/exampleindex');
-var hello = require('./routes/examplehello');
-var project = require("./routes/exampleproject")
+var index = require('./routes/index');
+var add_listing = require('./routes/add_listing');
+var filters = require("./routes/filters")
+var inventory = require("./routes/inventory")
+var listing = require("./routes/listing")
+var menu = require("./routes/menu")
+var register = require("./routes/register")
+var results = require("./routes/results")
+var search_listing = require("./routes/search_listing")
+var setting = require("./routes/setting")
+var signin = require("./routes/signin")
 
-var listing = require('./routes/listing');
+
 
 // Example route
 // var user = require('./routes/user');
@@ -41,11 +49,22 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view);
-app.get('/hello/:userName', hello.view);
-app.get("/project",project.viewProject);
-app.get("/project/:name",project.viewProject);
+app.get('/add_listing', add_listing.view);
+app.get('/filters', filters.view);
+app.get('/inventory', inventory.view);
+app.get('/listing', listing.view);
+app.get('/menu', menu.view);
+app.get('/register', register.view);
+app.get('/results', results.view);
+app.get('/search_listing', search_listing.view);
+app.get('/setting', setting.view);
+app.get('/signin', signin.view);
 
-app.get("/listing/", listing.view)
+//app.get('/hello/:userName', hello.view);
+//app.get("/project",project.viewProject);
+//app.get("/project/:name",project.viewProject);
+
+app.get()
 // Example route
 // app.get('/users', user.list);
 
