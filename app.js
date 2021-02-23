@@ -63,8 +63,6 @@ app.get('/signin', signin.view);
 //app.get('/hello/:userName', hello.view);
 //app.get("/project",project.viewProject);
 //app.get("/project/:name",project.viewProject);
-
-app.get()
 // Example route
 // app.get('/users', user.list);
 
