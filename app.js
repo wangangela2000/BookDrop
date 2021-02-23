@@ -8,9 +8,12 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
-var index = require('./routes/index');
-var hello = require('./routes/hello');
-var project = require("./routes/project")
+var index = require('./routes/exampleindex');
+var hello = require('./routes/examplehello');
+var project = require("./routes/exampleproject")
+
+var listing = require('./routes/listing');
+
 // Example route
 // var user = require('./routes/user');
 
@@ -41,6 +44,8 @@ app.get('/', index.view);
 app.get('/hello/:userName', hello.view);
 app.get("/project",project.viewProject);
 app.get("/project/:name",project.viewProject);
+
+app.get("/listing/", listing.view)
 // Example route
 // app.get('/users', user.list);
 
