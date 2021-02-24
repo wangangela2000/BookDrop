@@ -12,7 +12,15 @@ exports.view = function(req, res){
     query.count().then(count => {
         console.log(`ParseObjects found: ${count}`);
     })
-    var titleToShow = req.params.bookTitle;
+    
+    // read a Textbook object
+    
+    query.equalTo('exampleKey', 'exampleValue');
+    query.find().then((results) => {
+
+    })
+
+    var titleToShow = "exampleTitle";
     var isbnToShow = req.params.bookIsbn;
     var classToShow = req.params.classToShow;
     var priceToShow = req.params.price;
