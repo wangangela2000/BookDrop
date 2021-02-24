@@ -1,10 +1,10 @@
 {
-  "name": "IntroHCI",
+  "name": "bookdrop",
   "version": "0.0.1",
-  "author": "Intro HCI Staff",
+  "author": "Yada Angela Aaron",
   "repository": {
     "type": "git",
-    "url": "https://github.com/IntroHCI/lab4"
+    "url": "git+https://github.com/wangangela2000/BookDrop.git"
   },
   "license": "MIT",
   "private": true,
@@ -20,5 +20,12 @@
   },
   "engines": {
     "node": "0.10.x"
-  }
+  },
+  "description": "lab4 ====",
+  "bugs": {
+    "url": "https://github.com/wangangela2000/BookDrop/issues"
+  },
+  "homepage": "https://github.com/wangangela2000/BookDrop#readme",
+  "main": "app.js",
+  "devDependencies": {}
 }
