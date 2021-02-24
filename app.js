@@ -63,11 +63,19 @@ app.get('/signin', signin.view);
 //app.get('/hello/:userName', hello.view);
 //app.get("/project",project.viewProject);
 //app.get("/project/:name",project.viewProject);
-
-app.get()
 // Example route
 // app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+
+const Parse = require('parse/node');
+
+Parse.serverURL = 'https://parseapi.back4app.com'; // This is your Server URL
+Parse.initialize(
+  'GuAepYXLNNbNLLd8w2UMknXsgzPzxxhqHDCSPPHL', // This is your Application ID
+  '3QWSLUqIYVofYW9f4nHCMcql0BmFy0TuR16UMuyY', // This is your Javascript key
+  'OOrHFH3EsyD5CxgfCyhdGTS5Najxfiei6t9z71yi' // This is your Master key (never use it in the frontend)
+);
