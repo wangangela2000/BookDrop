@@ -43,3 +43,8 @@ body {
     color: #FFFFFF
 
 }
+
+
+button:focus{
+  background-color: #F4E7FA;
+}
