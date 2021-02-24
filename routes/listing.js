@@ -3,10 +3,10 @@
 */
 
 const Parse = require('parse/node');
+const Textbook = Parse.Object.extend("Textbook");
 
 exports.view = function(req, res){
     // need to display all the info for the stuff
-    var Textbook = Parse.Object.extend("Textbook");
     var query = new Parse.Query(Textbook);
 
     query.count().then(count => {
@@ -17,16 +17,17 @@ exports.view = function(req, res){
     
     query.equalTo('exampleKey', 'exampleValue');
     query.find().then((results) => {
+        // set the variables for res.render in here
+        var titleToShow = "exampleTitle"; // set this to results, maybe use the attributes?
+        var isbnToShow = req.params.bookIsbn;
+        var classToShow = req.params.classToShow;
+        var priceToShow = req.params.price;
 
+        var sellerContact = req.params.sellerContact;
+        var notes = req.params.seller;
     })
 
-    var titleToShow = "exampleTitle";
-    var isbnToShow = req.params.bookIsbn;
-    var classToShow = req.params.classToShow;
-    var priceToShow = req.params.price;
-
-    var sellerContact = req.params.sellerContact;
-    var notes = req.params.seller;
+    titleToShow = "1";
 
     res.render("listing", {
         "title": titleToShow,
