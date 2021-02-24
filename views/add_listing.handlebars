@@ -40,7 +40,7 @@
 			</div>
 
 			<div class="add-form">
-				<form action="/action_page.php">
+				<form method="get" action="/add_listing">
 
 					<div class="form-component">
 						<div class="form-label ftitle">
@@ -143,6 +143,15 @@
 						 </div>
 					</div>
 
+					<div class="form-component">
+						<div class="form-label fcontact">
+							<label for="fcontact"><p>SELLER CONTACT</p></label>
+						</div>
+						<div class="form-input">
+							<input type="text" id="fcontact" name="fcontact" placeholder="facebook.com/john1234">
+						</div>
+					</div>
+
 					<div class="form-textarea-component">
 						<div class="form-label">
 							<p>
@@ -158,7 +167,7 @@
 
 
 					<div class="submit-btn">
-						<input type="submit" value="ADD">
+						<input type="submit" value="ADD"></input>
 					</div>
 
 				</form>
