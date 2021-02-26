@@ -57,6 +57,8 @@ body {
 
 }
 
-.single-btn button:active{
+
+
+.single-btn button:hover{
   background-color: #F4E7FA;
 }
