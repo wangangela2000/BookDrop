@@ -19,6 +19,8 @@ var results = require("./routes/results")
 var search_listing = require("./routes/search_listing")
 var setting = require("./routes/setting")
 var signin = require("./routes/signin")
+var help = require("./routes/help")
+
 
 
 
@@ -51,6 +53,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/add_listing', add_listing.view);
 app.get('/filters', filters.view);
+app.get('/help', help.view);
 app.get('/inventory', inventory.view);
 app.get('/listing/:id', listing.view);
 app.get('/menu', menu.view);

@@ -35,7 +35,7 @@ body {
      margin-top: 3em;
      display: grid;
 }
-.submit-btn input {
+.submit-btn button {
      font-size:17px;
      background-color:#67108F;
      padding: 0.58em 1.38em;
@@ -55,4 +55,8 @@ body {
 
     color: #FFFFFF
 
+}
+
+.single-btn button:active{
+  background-color: #F4E7FA;
 }

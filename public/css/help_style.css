@@ -1,0 +1,66 @@
+/* applies to anything of class "example-class-selector" */
+body {
+     font-family: 'Source Sans Pro', sans-serif;
+     margin: 0px;
+}
+
+
+
+
+.section1{
+     background-color: #f4e7fa;
+     padding: 2em 2.5em;
+}
+
+
+
+
+
+
+.section2{
+    padding: 2em;
+}
+
+.help-heading{
+    display: flex;
+    padding-bottom: 1em;
+}
+
+.help-title{
+    font-family: 'Source Sans Pro'
+    font-style: normal;
+    font-weight: normal;
+    color: #212121;
+    font-size: 20px;
+
+
+}
+
+.FAQ-q p{
+  font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+
+/* dark purple 1 */
+
+color: #67108F;
+}
+
+.FAQ-a p{
+  font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+
+
+/* Gray 1 */
+
+color: #212121;
+}
+
+.FAQ-component{
+  margin-bottom: 2em;
+}
