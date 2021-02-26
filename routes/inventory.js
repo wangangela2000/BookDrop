@@ -5,7 +5,7 @@
 const Parse = require('parse/node');
 const Textbook = Parse.Object.extend('Textbook');
 
-exports.view = function(req, res){
+function renderListings(req, res){
   const query = new Parse.Query(Textbook);
   const listings = []
 
@@ -34,4 +34,23 @@ exports.view = function(req, res){
     .catch(function(error) {
       console.log('error! ' + error);
     });
-};
+}
+
+exports.view = renderListings;
+
+exports.delete = function(req, res){
+  var query = new Parse.Query(Textbook);
+  const id = req.params.id;
+  query.get(id).then((object) => {
+    object.destroy().then((response) => {
+      console.log('Deleted ParseObject', response);
+    }, (error) => {
+      console.error('Error while deleting ParseObject', error);
+    }).then((response) => {
+      renderListings(req, res);
+    });
+  }).catch(function(error) {
+    console.log(error);
+    renderListings(req, res);
+  });  
+}

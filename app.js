@@ -60,6 +60,8 @@ app.get('/search_listing', search_listing.view);
 app.get('/setting', setting.view);
 app.get('/signin', signin.view);
 
+app.get('/inventory/delete/:id', inventory.delete);
+
 //app.get('/hello/:userName', hello.view);
 //app.get("/project",project.viewProject);
 //app.get("/project/:name",project.viewProject);
