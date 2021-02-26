@@ -74,7 +74,7 @@
 			</div>
 			<div class="result-list">
 
-				{{#each listing}}
+				{{#each listings}}
 				<div class="listing-component">
 					<button type="button" onClick="parent.location='listing'">
 						<div class="listing">
@@ -84,7 +84,7 @@
 							<div class="listing-info">
 								<div class="info-title">{{title}}</div>
 								<div class="info-author">{{author}}</div>
-								<div class="info-price">{{price}}</div>
+								<div class="info-price">${{price}}</div>
 								<div class="info-class">{{class}}</div>
 							</div>
 						</div>
