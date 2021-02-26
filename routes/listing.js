@@ -8,30 +8,24 @@ const Textbook = Parse.Object.extend("Textbook");
 exports.view = function(req, res){
     // need to display all the info for the stuff
     var query = new Parse.Query(Textbook);
-
-    query.count().then(count => {
-        console.log(`ParseObjects found: ${count}`);
-    })
-    
+    const id = req.params.id;    
+    console.log("ID is: " + id);
     // read a Textbook object
-    
-    query.equalTo('exampleKey', 'exampleValue');
-    query.find().then((results) => {
+    query.get(id).then((obj) => {
         // set the variables for res.render in here
-        var titleToShow = "exampleTitle"; // set this to results, maybe use the attributes?
-        var isbnToShow = req.params.bookIsbn;
-        var classToShow = req.params.classToShow;
-        var priceToShow = req.params.price;
 
-        var sellerContact = req.params.sellerContact;
-        var notes = req.params.seller;
+        res.render("listing", {
+            "author": obj.get('author'),
+            "title": obj.get('title'),
+            "isbn": obj.get('isbn'),
+            "class": obj.get('class'),
+            "price": obj.get('price'),
+            "condition": obj.get('condition'),
+            "negotiable": obj.get('negotiable'),
+            "notes": obj.get('notes'),
+        });
     })
-
-    titleToShow = "1";
-
-    res.render("listing", {
-        "title": titleToShow,
-    });
+    
 };
 
 // Text

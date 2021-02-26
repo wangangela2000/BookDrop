@@ -52,7 +52,7 @@ app.get('/', index.view);
 app.get('/add_listing', add_listing.view);
 app.get('/filters', filters.view);
 app.get('/inventory', inventory.view);
-app.get('/listing', listing.view);
+app.get('/listing/:id', listing.view);
 app.get('/menu', menu.view);
 app.get('/register', register.view);
 app.get('/results', results.view);

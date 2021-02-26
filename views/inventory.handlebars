@@ -45,10 +45,10 @@
 			<div class="result-list">
 				{{#each listings}}
 				<div class="listing-component">
-					<button type="button" onClick="parent.location='listing'">
+					<button type="button" onClick="parent.location='listing/{{id}}'">
 						<div class="listing">
 							<div class="listing-img">
-								<img src="images/{{image}}">
+								<img src="{{image}}">
 							</div>
 							<div class="listing-info">
 								<div class="info-title">{{title}}</div>

@@ -23,10 +23,10 @@ exports.view = function(req, res){
           "author" : object.get('author'),
           "price" : object.get('price'),
           "class" : object.get('class'),
-          "image" : object.get('image')
+          "id" : object.id
         }
         listings.push(newListing);
-        console.log('Added listing: ' + object.get('title'));
+        console.log('Added listing: ' + object.get('id'));
       }
 
       console.log('Number of listings: ' + listings.length);
