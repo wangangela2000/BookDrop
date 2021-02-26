@@ -66,3 +66,11 @@ body {
 .single-btn button:active{
   background-color: #F4E7FA;
 }
+
+.single-btn button:focus{
+  background-color: #F4E7FA;
+}
+
+.single-btn button:visited{
+  background-color: #F4E7FA;
+}
