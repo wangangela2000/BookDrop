@@ -3,10 +3,10 @@
  * Module dependencies.
  */
 
-var express = require('express');
-var http = require('http');
-var path = require('path');
-var handlebars = require('express3-handlebars')
+const express = require('express');
+const http = require('http');
+const path = require('path');
+const handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var add_listing = require('./routes/add_listing');
@@ -27,7 +27,7 @@ var help = require("./routes/help")
 // Example route
 // var user = require('./routes/user');
 
-var app = express();
+const app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -49,6 +49,10 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+app.use(express.urlencoded({
+  extended: true
+}))
+
 // Add routes here
 app.get('/', index.view);
 app.get('/add_listing', add_listing.view);
@@ -60,10 +64,18 @@ app.get('/menu', menu.view);
 app.get('/register', register.view);
 app.get('/results', results.view);
 app.get('/search_listing', search_listing.view);
+
 app.get('/setting', setting.view);
+app.post('/setting', search_listing.view);
+
+
 app.get('/signin', signin.view);
 
 app.get('/inventory/delete/:id', inventory.delete);
+
+
+app.post('/inventory/add', inventory.add);
+// app.get('/inventory/add', inventory.view);
 
 //app.get('/hello/:userName', hello.view);
 //app.get("/project",project.viewProject);
