@@ -63,6 +63,69 @@ h1 {
 .section2{
     padding: 2em;
 }
+
+.info-component{
+  display: flex;
+  padding: 2em 1em;
+}
+
+.info-1{
+  width: 50vw;
+}
+.info-2r{
+  width: 50vw;
+}
+.info-title{
+  font-family: Source Sans Pro;
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 31px;
+padding-bottom: 0.3em;
+
+/* dark purple 1 */
+
+color: #67108F;
+}
+
+.info-p{
+  font-family: Source Sans Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+}
+
+.info-2{
+  display: grid;
+  margin-left: auto;
+}
+
+.info-2 img{
+  object-fit: contain;
+  width: 15vw;
+  margin: auto;
+}
+
+.info-1r{
+  display: grid;
+  margin-right: auto;
+}
+
+.info-1r img{
+  object-fit: contain;
+  width: 15vw;
+  margin: auto;
+}
+
+
+/*.divider{
+  border-color: #f4e7fa;
+  border-style: solid;
+  margin: 0em 1em;
+  border-width: 0.1px;
+}
+*/
 .text {
     padding: 0em 1.5em;
     padding-bottom: 1.5em;
