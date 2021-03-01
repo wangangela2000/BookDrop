@@ -61,7 +61,7 @@ h1 {
 
 
 .section2{
-    padding: 2em;
+    padding: 1em 2em;
 }
 
 .info-component{
@@ -119,13 +119,13 @@ line-height: 15px;
 }
 
 
-/*.divider{
+.divider{
   border-color: #f4e7fa;
   border-style: solid;
   margin: 0em 1em;
   border-width: 0.1px;
 }
-*/
+
 .text {
     padding: 0em 1.5em;
     padding-bottom: 1.5em;
