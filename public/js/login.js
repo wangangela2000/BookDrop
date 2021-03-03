@@ -1,11 +1,11 @@
 function login() {
-
     const currentUser = Parse.User.current();
     if (currentUser) {
         // do stuff with the user
         // redirect to inventory
-        console.log('already logged in')
+        
         window.location = window.location.origin + '/inventory';
+        console.log('already logged in:' + currentUser.id);
     } else {
         console.log('attempting to login')
         // show the signup or login page
@@ -41,4 +41,14 @@ function login() {
     }
 
 
+}
+
+function logout() {
+    const currentUser = Parse.User.current();
+    if (currentUser) {
+        // do stuff with the user
+        // redirect to inventory
+        console.log('logged out :D');
+        Parse.User.logOut();
+    }
 }
