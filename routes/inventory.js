@@ -56,41 +56,42 @@ exports.delete = function(req, res){
 }
 
 exports.add = function(req, res) {
-  
-  var newListing = new Textbook();
-  // set values using req
-  // example:
-  // newListing.set("title", req.params.title);
-  var price = req.body.fprice;
-  price.replace("$", "");
+  Parse.User.currentAsync().then(function(user) {
+    var newListing = new Textbook();
+    // set values using req
+    // example:
+    // newListing.set("title", req.params.title);
+    var price = req.body.fprice;
+    price.replace("$", "");
 
-  
-  newListing.set('author', req.body.fauthor);
-  newListing.set('title', req.body.ftitle);
-  newListing.set('isbn', req.body.fisbn);
-  newListing.set('class', req.body.fclass);
-  newListing.set('price', req.body.fprice);
-  newListing.set('condition', req.body.fcondition);
-  newListing.set('negotiable', "$" + price);
-  newListing.set('contact', req.body.fcontact);
-  //newListing.set('image', new Parse.File("resume.txt");
-  newListing.set('notes', req.body.fnotes);
+    newListing.set('ownerId', user.id)
+    newListing.set('author', req.body.fauthor);
+    newListing.set('title', req.body.ftitle);
+    newListing.set('isbn', req.body.fisbn);
+    newListing.set('class', req.body.fclass);
+    newListing.set('price', req.body.fprice);
+    newListing.set('condition', req.body.fcondition);
+    newListing.set('negotiable', "$" + price);
+    newListing.set('contact', req.body.fcontact);
+    //newListing.set('image', new Parse.File("resume.txt");
+    newListing.set('notes', req.body.fnotes);
 
-  newListing.save().then(
-    (result) => {
-      if (typeof document !== 'undefined') document.write(`Textbook created: ${JSON.stringify(result)}`);
-      console.log('Textbook created', result);
-    },
-    (error) => {
-      if (typeof document !== 'undefined') document.write(`Error while creating Textbook: ${JSON.stringify(error)}`);
-      console.error('Error while creating Textbook: ', error);
-    }
-  ).then(
-    (result) => {
-      renderListings(req, res);
-    },
-    (error) => {
-      renderListings(req, res);
-    }
-  );
+    newListing.save().then(
+      (result) => {
+        if (typeof document !== 'undefined') document.write(`Textbook created: ${JSON.stringify(result)}`);
+        console.log('Textbook created', result);
+      },
+      (error) => {
+        if (typeof document !== 'undefined') document.write(`Error while creating Textbook: ${JSON.stringify(error)}`);
+        console.error('Error while creating Textbook: ', error);
+      }
+    ).then(
+      (result) => {
+        renderListings(req, res);
+      },
+      (error) => {
+        renderListings(req, res);
+      }
+    );
+  });
 }
