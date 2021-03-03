@@ -6,6 +6,13 @@ const Parse = require('parse/node');
 const Textbook = Parse.Object.extend('Textbook');
 
 function renderListings(req, res){
+  const current = Parse.User.current();
+  if (current) {
+    console.log('current user id: ' + current.id);
+  } else {
+    console.log('no one is logged in D:');
+  } 
+
   const query = new Parse.Query(Textbook);
   const listings = []
 
