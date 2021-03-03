@@ -1,0 +1,19 @@
+<!-- Replace all code under this line with your copied script -->
+<script>
+  const Parse = require('parse/node');
+  window.fbAsyncInit = function() {
+    Parse.FacebookUtils.init({
+      appId      : '255366696240841',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v10.0'
+    });
+  };
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>

@@ -11,6 +11,9 @@
 	<link href="css/form_style.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:ital,wght@0,100...900;1,100...900">
+	
+	{{> facebook}}
+	<script src="js/facebook.js"></script>
 
 	<!-- this is a comment in HTML -->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -22,6 +25,8 @@
 </head>
 
 <body>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=255366696240841&autoLogAppEvents=1" nonce="5BTh5aSc"></script>
 	<div>
 		<div class="section1">
 			<div class="user-img">
@@ -60,15 +65,16 @@
 					<div class="submit-btn">
 						<button type="button" value="SIGN IN" onClick="parent.location='inventory'">SIGN IN</button>
 					</div>
+					
 
 				<div class="other-btn">
 					<button type="button" onClick="parent.location='register'">REGISTER></button>
 				</div>
 
-
 			</div>
 
 		</div>
 	</div>
+	<div style="margin: 0 auto; width: 390px;" class="fb-login-button" data-width="" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true"></div>
 </body>
 </html>
