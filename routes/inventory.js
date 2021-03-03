@@ -6,7 +6,7 @@ const Parse = require('parse/node');
 const Textbook = Parse.Object.extend('Textbook');
 
 function renderListings(req, res){
-  const current = req.user;
+  const current = req.body.user;
   var userId = '';
   if (current) {
     console.log('current user id: ' + current.id);
@@ -18,7 +18,7 @@ function renderListings(req, res){
   const query = new Parse.Query(Textbook);
   const listings = []
 
-  query.equalTo('ownerId', userId);
+  // query.equalTo('ownerId', userId);
 
   query.find()
     .then(function(results) {
