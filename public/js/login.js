@@ -18,7 +18,7 @@ function login() {
                             success: function(user) {
                                 alert('User logged in and sign up through Facebook, with username: ' + user.get('username'));
     
-                                window.location = 'https://a7-bookdrop.herokuapp.com/inventory';
+                                window.location = window.location.origin + '/inventory';
                             },
                             error: function(user, error) {
                                 alert('Failed to save user to database with error: ' + error.message);
@@ -27,14 +27,15 @@ function login() {
                     });
                 } else {
                     console.log("User logged in through Facebook!");
-                    window.location = 'https://a7-bookdrop.herokuapp.com/inventory';
+                    window.location = window.location.origin + '/inventory';
                 }
             },
             error: function(user, error) {
                 console.log("User cancelled the Facebook login or did not fully authorize.");
             }
         }).then((result) => {
-            window.location = 'https://a7-bookdrop.herokuapp.com/inventory';
+            console.log('login result: ' + result);
+            window.location = window.location.origin + '/inventory';
         });
     }
 
