@@ -26,7 +26,7 @@ function renderListings(req, res){
       }
 
       console.log('Number of listings: ' + listings.length);
-        
+
       res.render('inventory', {
         'listings': listings
       });
@@ -52,7 +52,7 @@ exports.delete = function(req, res){
   }).catch(function(error) {
     console.log(error);
     renderListings(req, res);
-  });  
+  });
 }
 
 exports.add = function(req, res) {
@@ -82,13 +82,17 @@ exports.add = function(req, res) {
     (error) => {
       if (typeof document !== 'undefined') document.write(`Error while creating Textbook: ${JSON.stringify(error)}`);
       console.error('Error while creating Textbook: ', error);
+
+
     }
   ).then(
     (result) => {
       renderListings(req, res);
+
     },
     (error) => {
       renderListings(req, res);
+
     }
   );
 }
