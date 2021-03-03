@@ -7,16 +7,15 @@ function login() {
         console.log('logged out')
     } else {
         // show the signup or login page
-        Parse.FacebookUtils.logIn("public_profile,email", {
+        Parse.FacebookUtils.logIn("public_profile", {
             success: function(user) {
                 if (!user.existed()) {
                     FB.api('/me?fields=id,name,email,permissions', function (response) {
                         user.set('username', response.name);
-                        user.set('email', response.email);
     
                         user.save(null, {
                             success: function(user) {
-                                console.log('User logged in and sign up through Facebook, with username: ' + user.get('username') + ' and email: ' + user.get('email'));
+                                console.log('User logged in and sign up through Facebook, with username: ' + user.get('username'));
     
                                 // You should redirect the user to another page after a successful login.
                                 window.location = 'https://a7-bookdrop.herokuapp.com/inventory';
