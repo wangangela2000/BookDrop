@@ -18,7 +18,7 @@ function renderListings(req, res){
   const query = new Parse.Query(Textbook);
   const listings = []
 
-  query.equalTo('ownerId', userId);
+  // query.equalTo('ownerId', userId);
 
   query.find()
     .then(function(results) {
