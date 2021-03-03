@@ -4,6 +4,7 @@ function login() {
     if (currentUser) {
         // do stuff with the user
         // redirect to inventory
+        console.log('already logged in')
         window.location = window.location.origin + '/inventory';
     } else {
         console.log('attempting to login')
