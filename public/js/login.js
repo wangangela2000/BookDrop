@@ -3,8 +3,8 @@ function login() {
     const currentUser = Parse.User.current();
     if (currentUser) {
         // do stuff with the user
-        Parse.User.logOut();
-        console.log('logged out')
+        // redirect to inventory
+        window.location = window.location.origin + '/inventory';
     } else {
         console.log('attempting to login')
         // show the signup or login page
