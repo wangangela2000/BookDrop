@@ -70,6 +70,7 @@ app.post('/setting', search_listing.view);
 
 
 app.get('/signin', signin.view);
+app.post('/signin/fblogin', signin.login);
 
 app.get('/inventory/delete/:id', inventory.delete);
 
@@ -87,7 +88,6 @@ http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
 
-
 const Parse = require('parse/node');
 
 Parse.serverURL = 'https://parseapi.back4app.com'; // This is your Server URL
@@ -96,3 +96,14 @@ Parse.initialize(
   '3QWSLUqIYVofYW9f4nHCMcql0BmFy0TuR16UMuyY', // This is your Javascript key
   'OOrHFH3EsyD5CxgfCyhdGTS5Najxfiei6t9z71yi' // This is your Master key (never use it in the frontend)
 );
+
+global.fbAsyncInit = function() {
+  Parse.FacebookUtils.init({ // this line replaces FB.init({
+      appId      : '255366696240841',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v10.0'
+  });
+
+  // Put here code to run after the Facebook SDK is loaded.
+};

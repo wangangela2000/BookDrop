@@ -1,19 +1,32 @@
 <!-- Replace all code under this line with your copied script -->
 <script>
-  const Parse = require('parse/node');
-  window.fbAsyncInit = function() {
-    Parse.FacebookUtils.init({
-      appId      : '255366696240841',
-      cookie     : true,
-      xfbml      : true,
-      version    : 'v10.0'
+  // Initialize Parse
+Parse.serverURL = 'https://parseapi.back4app.com'; // This is your Server URL
+Parse.initialize(
+  'GuAepYXLNNbNLLd8w2UMknXsgzPzxxhqHDCSPPHL', // This is your Application ID
+  '3QWSLUqIYVofYW9f4nHCMcql0BmFy0TuR16UMuyY', // This is your Javascript key
+);
+
+// Load the Facebook API asynchronous when the window starts loading
+window.fbAsyncInit = function() {
+    Parse.FacebookUtils.init({ // this line replaces FB.init({
+        appId      : '255366696240841',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v10.0'
     });
-  };
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
+    // Put here code to run after the Facebook SDK is loaded.
+    console.log('initialized Parse.FacebookUtils.init');
+};
+
+// Include the Facebook SDK
+(function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    console.log('loaded fb-jssdk');
+}(document, 'script', 'facebook-jssdk'));
+  
 </script>
