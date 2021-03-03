@@ -7,8 +7,10 @@ const Textbook = Parse.Object.extend('Textbook');
 
 function renderListings(req, res){
   const current = Parse.User.current();
+  var userId = '';
   if (current) {
     console.log('current user id: ' + current.id);
+    userId = current.id;
   } else {
     console.log('no one is logged in D:');
   } 
@@ -22,6 +24,7 @@ function renderListings(req, res){
       for (let i = 0; i < results.length; i++) {
         const object = results[i];
         const newListing = {
+          "ownerId": userId,
           "title" : object.get('title'),
           "author" : object.get('author'),
           "price" : object.get('price'),
