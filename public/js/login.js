@@ -19,7 +19,7 @@ function login() {
                                 console.log('User logged in and sign up through Facebook, with username: ' + user.get('username') + ' and email: ' + user.get('email'));
     
                                 // You should redirect the user to another page after a successful login.
-                                window.location.replace('https://a7-bookdrop.herokuapp.com/inventory');
+                                window.location = 'https://a7-bookdrop.herokuapp.com/inventory';
                             },
                             error: function(user, error) {
                                 console.log('Failed to save user to database with error: ' + error.message);
@@ -29,7 +29,7 @@ function login() {
                 } else {
                     console.log("User logged in through Facebook!");
                     // You should redirect the user to another page after a successful login.
-                    window.location.replace('https://a7-bookdrop.herokuapp.com/');
+                    window.location = 'https://a7-bookdrop.herokuapp.com/';
                 }
             },
             error: function(user, error) {
