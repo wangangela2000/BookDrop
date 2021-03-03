@@ -14,7 +14,7 @@ function login() {
                 if (!user.existed()) {
                     FB.api('/me?fields=id,name,email,permissions', function (response) {
                         user.set('username', response.name);
-    
+
                         user.save(null, {
                             success: function(user) {
                                 alert('User logged in and sign up through Facebook, with username: ' + user.get('username'));

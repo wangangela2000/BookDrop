@@ -6,7 +6,7 @@ const Parse = require('parse/node');
 const Textbook = Parse.Object.extend('Textbook');
 
 function renderListings(req, res){
-  const current = Parse.User.current();
+  const current = req.user;
   var userId = '';
   if (current) {
     console.log('current user id: ' + current.id);
