@@ -4,6 +4,7 @@ function login() {
     if (currentUser) {
         // do stuff with the user
         Parse.User.logOut();
+        console.log('logged out')
     } else {
         // show the signup or login page
         Parse.FacebookUtils.logIn("public_profile,email", {
