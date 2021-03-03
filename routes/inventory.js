@@ -56,6 +56,7 @@ exports.delete = function(req, res){
 }
 
 exports.add = function(req, res) {
+  
   var newListing = new Textbook();
   // set values using req
   // example:
@@ -63,6 +64,7 @@ exports.add = function(req, res) {
   var price = req.body.fprice;
   price.replace("$", "");
 
+  
   newListing.set('author', req.body.fauthor);
   newListing.set('title', req.body.ftitle);
   newListing.set('isbn', req.body.fisbn);
