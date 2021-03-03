@@ -32,7 +32,7 @@
 .listing-img img{
     margin: auto;
     object-fit: contain;
-    height: 100px;
+    height: 75px;
 }
 .remove-listing button{
   background-color: #f4e7fa;
