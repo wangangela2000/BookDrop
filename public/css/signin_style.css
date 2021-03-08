@@ -52,6 +52,7 @@ body {
      background-color:#67108F;
      padding: 0.58em 1.38em;
      width: 50%;
+     min-width: 125px;
      max-width: 177px;
      border-radius: 5px;
      font-family: 'Source Sans Pro', sans-serif;
@@ -79,6 +80,8 @@ body {
      background-color:#FFFFFF;
      padding: 0.58em 1.38em;
      width: 50%;
+     min-width: 125px;
+
      max-width: 177px;
      border-radius: 5px;
      font-family: 'Source Sans Pro', sans-serif;
