@@ -8,7 +8,7 @@ const Textbook = Parse.Object.extend("Textbook");
 exports.view = function(req, res){
     // need to display all the info for the stuff
     var query = new Parse.Query(Textbook);
-    const id = req.params.id;    
+    const id = req.params.id;
     console.log("ID is: " + id);
     // read a Textbook object
     query.get(id).then((obj) => {
@@ -22,10 +22,11 @@ exports.view = function(req, res){
             "price": obj.get('price'),
             "condition": obj.get('condition'),
             "negotiable": obj.get('negotiable'),
+            "contact": obj.get('contact'),
             "notes": obj.get('notes'),
         });
     })
-    
+
 };
 
 // Text

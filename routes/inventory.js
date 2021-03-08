@@ -13,7 +13,7 @@ function renderListings(req, res){
     userId = current.id;
   } else {
     console.log('no one is logged in D:');
-  } 
+  }
 
   const query = new Parse.Query(Textbook);
   const listings = []
@@ -79,9 +79,9 @@ exports.add = function(req, res) {
   newListing.set('title', req.body.ftitle);
   newListing.set('isbn', req.body.fisbn);
   newListing.set('class', req.body.fclass);
-  newListing.set('price', req.body.fprice);
+  newListing.set('price', "$" + req.body.fprice);
   newListing.set('condition', req.body.fcondition);
-  newListing.set('negotiable', "$" + price);
+  newListing.set('negotiable', req.body.fnegotiable);
   newListing.set('contact', req.body.fcontact);
   //newListing.set('image', new Parse.File("resume.txt");
   newListing.set('notes', req.body.fnotes);
