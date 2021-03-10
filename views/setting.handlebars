@@ -75,9 +75,13 @@
 						</div>
 					</div>
 
+					<script>
+						function unimplementedAlert() {
+							alert("This is not a core feature and has not been implemented.");
+						}
+					</script>
 
-
-					<div class="submit-btn">
+					<div class="submit-btn" onclick="unimplementedAlert()">
 						<input type="submit" value="SAVE">
 					</div>
 
@@ -85,10 +89,7 @@
 				<div class="other-btn">
 					<button type="button" onClick="parent.location='/search_listing'">CANCEL</button>
 				</div>
-
-
 			</div>
-
 		</div>
 	</div>
 </body>

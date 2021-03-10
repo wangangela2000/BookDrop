@@ -44,6 +44,35 @@ body {
 
 }
 
+.other-btn{
+     margin-top: 1em;
+     display: flex;
+   }
+   
+   .other-btn button {
+        font-size:17px;
+        background-color:#FFFFFF;
+        padding: 0.58em 1.38em;
+        width: 50%;
+        max-width: 200px;
+        border-radius: 5px;
+        font-family: 'Source Sans Pro', sans-serif;
+        border-color: #67108F;
+        border-width: 1px;
+        margin: auto;
+        text-align: center;
+   
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: 0.05em;
+        white-space: nowrap;
+   
+       /* white */
+   
+       color: #67108F
+   
+   }
+   
 
 button:focus{
   background-color: #F4E7FA;

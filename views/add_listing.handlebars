@@ -149,7 +149,12 @@
 						</div>
 						<div class="form-btn-group">
 							<div class="form-btn single-btn">
-								<button type="button">
+								<script>
+									function unimplementedAlert() {
+										alert("This is not a core feature and has not been implemented.");
+									}
+								</script>
+								<button type="button" onclick="unimplementedAlert()">
 									<div class="upload-btn-img">
 										<img src="images/upload.png">
 									</div>
@@ -190,6 +195,10 @@
 						<!--button id="submit-button" type="button" onClick="parent.location='inventory'">
 						<input type="submit" value="ADD"></input>
 					</button-->
+					</div>
+
+					<div class="other-btn">
+						<button type="button" onClick="parent.location='/inventory'">CANCEL</button>
 					</div>
 
 				</form>

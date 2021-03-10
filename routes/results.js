@@ -44,6 +44,7 @@ exports.view = function(req, res){
         console.log('error! ' + error);
     });
   } else {
+    serach = search.toLowerCase();
     console.log('searching for: ' + search)
     query.find()
     .then((results) => {
@@ -70,6 +71,4 @@ exports.view = function(req, res){
         console.log('error! ' + error);
     });
   }
-
-  
 };
