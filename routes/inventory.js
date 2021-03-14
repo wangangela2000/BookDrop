@@ -4,6 +4,8 @@
  */
 const Parse = require('parse/node');
 const Textbook = Parse.Object.extend('Textbook');
+const Filter = require('bad-words');
+var filter = new Filter();
 
 function renderListings(req, res){
   const current = req.body.user;
@@ -75,14 +77,14 @@ exports.add = function(req, res) {
   var price = req.body.fprice;
   price.replace("$", "");
 
-  newListing.set('author', req.body.fauthor);
-  newListing.set('title', req.body.ftitle);
-  newListing.set('isbn', req.body.fisbn);
-  newListing.set('class', req.body.fclass);
-  newListing.set('price', "$" + req.body.fprice);
-  newListing.set('condition', req.body.fcondition);
-  newListing.set('negotiable', req.body.fnegotiable);
-  newListing.set('contact', req.body.fcontact);
+  newListing.set('author', filter.clean(req.body.fauthor));
+  newListing.set('title', filter.clean(req.body.ftitle));
+  newListing.set('isbn', filter.clean(req.body.fisbn));
+  newListing.set('class', filter.clean(req.body.fclass));
+  newListing.set('price', "$" + filter.clean(req.body.fprice));
+  newListing.set('condition', filter.clean(req.body.fcondition));
+  newListing.set('negotiable', filter.clean(req.body.fnegotiable));
+  newListing.set('contact', filter.clean(req.body.fcontact));
   //newListing.set('image', new Parse.File("resume.txt");
   newListing.set('notes', req.body.fnotes);
 
